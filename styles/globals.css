@@ -1,9 +1,26 @@
+
+/* defining fonts */
+
+@font-face {
+  font-family: overall;
+  src: url("../fonts/resist_light.otf");
+}
+
+@font-face {
+  font-family: heading;
+  src: url("../fonts/Fogtwo.ttf");
+}
+
+/* Defining Variables  */
+
+:root {
+  --primary-color: #694296;
+  --secondary-color : #639040;
+}
+
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: overall;
 }
 
 a {
@@ -12,5 +29,25 @@ a {
 }
 
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+}
+
+
+h1 {
+  font-family: heading;
+  font-size: 7rem;
+  font-weight: 500;
+
+  color : var(--primary-color)
+}
+
+
+h2 {
+  font-family: heading;
+  font-size: 5rem;
+  font-weight: 500;
+
+  color : var(--secondary-color)
 }
